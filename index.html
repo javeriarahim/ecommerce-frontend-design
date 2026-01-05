@@ -1,42 +1,104 @@
-<header class="main-header">
-    <div class="container">
-        <div class="logo">
-            <img src="assets/logo.svg" alt="Company Logo">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store | Frontend Task</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo"><strong>SHOP</strong>LOGOS</div>
+            <div class="search-container">
+                <input type="text" id="header-search" placeholder="Search for products...">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Cart (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>New Season Arrivals</h1>
+                <p>Check out the latest trends for the upcoming summer season.</p>
+                <div class="cta-group">
+                    <button class="btn-primary">Shop Now</button>
+                    <button class="btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3>Classic T-Shirt</h3>
+                    <p class="price">$25.00</p>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3>Denim Jacket</h3>
+                    <p class="price">$85.00</p>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3>Leather Boots</h3>
+                    <p class="price">$120.00</p>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <h3>Summer Hat</h3>
+                    <p class="price">$15.00</p>
+                    <button class="btn-buy">Buy Now</button>
+                </div>
+            </div>
         </div>
         
-        <form class="search-bar">
-            <input type="text" placeholder="Search products...">
-            <button type="submit">Search</button>
-        </form>
+        <div class="pagination">
+            <button class="btn-secondary">Load More Products</button>
+        </div>
+    </main>
 
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    //week 2 : Added home and product list page
-    <section class="hero">
-    <div class="hero-content">
-        <h1>Summer Collection 2026</h1>
-        <p>Discover the latest trends in eCommerce fashion.</p>
-        <div class="cta-buttons">
-            <button class="btn-primary">Shop Now</button>
-            <button class="btn-secondary">View Details</button>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Company</h4>
+                <ul><li>About Us</li><li>Careers</li></ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul><li>FAQ</li><li>Shipping</li></ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul><li>Email: support@shop.com</li><li>Phone: +123 456</li></ul>
+            </div>
         </div>
-    </div>
-</section>
-    <div class="product-grid">
-    <article class="product-card">
-        <div class="product-image">
-            <img src="assets/product1.jpg" alt="Product Name">
-        </div>
-        <h3>Classic White Tee</h3>
-        <p class="price">$25.00</p>
-        <button class="buy-now">Buy Now</button>
-    </article>
-</div>
-</header>
+        <p class="copyright">&copy; 2026 E-Commerce Internship Task. Desktop Version Only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
