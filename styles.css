@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'YourFigmaFont', sans-serif;
+}
+
+.container {
+    max-width: 1200px; /* Adjust based on Figma layout width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.main-header .container {
+    display: flex;
+    justify-content: space-between; /* Pushes Logo, Search, and Nav apart */
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between links */
+}
